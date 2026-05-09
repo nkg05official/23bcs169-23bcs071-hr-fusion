@@ -1,0 +1,79 @@
+/* HeroBanner.module.css */
+
+.wrapper {
+    /* padding-top: 20px; */
+    margin-top: 20px;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    /* background: #f0f4f8; Light background to match the theme */
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    margin-bottom: 40px;
+    /* max-height: 150px; */
+  }
+  
+  .inner {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-left:25%;
+    width:100%;
+  }
+  
+  .dots {
+    position: absolute;
+    color: var(--mantine-color-gray-1);
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  
+  .title {
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: -1px;
+    color: var(--mantine-color-black);
+    margin-bottom: 10px;
+    font-family: 'Greycliff CF', sans-serif;
+    text-align: left;
+    @media (max-width: 480px) {
+      font-size: 28px;
+    }
+  }
+  
+  .highlight {
+    color: var(--mantine-color-blue-6);
+  }
+  
+  .description {
+    max-width: 600px;
+    font-size: 18px;
+    color: var(--mantine-color-gray-7);
+    text-align: left;
+    margin-left: -20%;
+  }
+  
+  .controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    @media (max-width: 480px) {
+      flex-direction: column;
+    }
+  }
+  
+  .control {
+    &:not(:first-of-type) {
+      margin-left: 15px;
+    }
+    @media (max-width: 480px) {
+      height: 42px;
+      font-size: 16px;
+      &:not(:first-of-type) {
+        margin-top: 15px;
+        margin-left: 0;
+      }
+    }
+  }
+  

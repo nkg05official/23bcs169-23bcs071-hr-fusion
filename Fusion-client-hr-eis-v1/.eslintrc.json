@@ -1,0 +1,61 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react-hooks/recommended",
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:prettier/recommended"
+  ],
+  "overrides": [
+    {
+      "env": {
+        "node": true
+      },
+      "files": [".eslintrc.{js,cjs}"],
+      "parserOptions": {
+        "sourceType": "script"
+      }
+    }
+  ],
+  "parserOptions": {
+    "parser": "@babel/eslint-parser",
+    "requireConfigFile": false,
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "prettier"],
+  "rules": {
+    "import/prefer-default-export": "off",
+    "no-param-reassign": "off",
+    "react/react-in-jsx-scope": 0,
+    "react-hooks/exhaustive-deps": 0,
+    "react/no-unescaped-entities": "off",
+    "react/require-default-props": "off",
+    "react/no-array-index-key": 0,
+    "react/destructuring-assignment": 0,
+    "no-console": 0,
+    "camelcase": 0,
+    "no-alert": 0,
+    "react/button-has-type": 0,
+    "no-underscore-dangle": 0,
+    "no-nested-ternary": 0,
+    "import/no-extraneous-dependencies": "off",
+    "consistent-return": "off",
+    "import/extensions": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

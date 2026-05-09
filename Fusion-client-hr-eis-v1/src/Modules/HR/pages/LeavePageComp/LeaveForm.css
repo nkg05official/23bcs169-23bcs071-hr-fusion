@@ -1,0 +1,7 @@
+.m_8fb7ebe7:disabled, .m_8fb7ebe7[data-disabled] {
+    background-color: #f5f5f5;
+    color: black;
+    cursor: not-allowed;
+    border: 1px solid #f5f5f5;
+    box-shadow: none;
+}

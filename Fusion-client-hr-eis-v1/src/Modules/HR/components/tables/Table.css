@@ -1,0 +1,208 @@
+/* Table Container */
+:root {
+  --hr-surface: #f7f8fc;
+  --hr-surface-elevated: #ffffff;
+  --hr-border: #545454;
+  --hr-text: #1f2937;
+  --hr-muted: #6b7280;
+  --hr-accent: #15abff;
+}
+
+.hr-table-title {
+  font-weight: 500;
+  margin-top: 40px;
+  margin-left: 15px;
+  color: var(--hr-text);
+}
+
+.hr-toolbar {
+  margin: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hr-toolbar-left {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.hr-toolbar-right {
+  font-weight: 400;
+  color: var(--hr-muted);
+}
+
+.hr-status-pill {
+  font-weight: 700;
+}
+
+.hr-pagination-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.form-table-container {
+    /* max-width: 1000px; */
+    margin: 20px auto;
+    padding: 10px;
+    background-color: var(--hr-surface);
+  }
+  
+  /* Table */
+  .form-table-container .form-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    /* Adds gap between rows */
+    background-color: var(--hr-surface-elevated);
+    border: 1px solid var(--hr-border);
+    /* Added border for cleaner look */
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  /* Table Headers */
+  .form-table-container .table-header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--hr-text);
+    /* Darker text for readability */
+    background-color: var(--hr-surface-elevated);
+    /* White background for header */
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid var(--hr-border);
+    /* Clean line separating header */
+  }
+  
+  /* Table Row */
+  .form-table-container .table-row {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background-color: var(--hr-surface-elevated);
+    color: var(--hr-text);
+    transition: background-color 0.3s ease;
+    /* Row hover effect */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--hr-border);
+    /* Add a slight shadow between rows */
+  }
+  
+  /* Row Hover Effect */
+  .form-table-container .table-row:hover {
+    background-color: #f1f3f6;
+    /* Light background change on hover */
+  }
+  
+  /* Data Cells */
+  .form-table-container .table-row td {
+    padding: 12px 20px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--hr-text);
+    border-top: none;
+    position: relative;
+    border-radius: 0;
+    border-right: 1px solid var(--hr-border);
+    /* Subtle column divider */
+  }
+  
+  /* Remove border from last column */
+  .form-table-container .table-row td:last-child {
+    border-right: none;
+  }
+  
+  /* Action Links - View and Track */
+  .form-table-container .text-link {
+    color: var(--hr-text);
+    /* Default color matches row text */
+    margin-left: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    /* Reduced font size for action links */
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+  }
+  
+  /* Adding space between icon and text */
+  .form-table-container .text-link svg {
+    margin-right: 8px;
+    fill: var(--hr-text);
+    /* Default icon color matches text color */
+    transition: fill 0.3s ease;
+    /* Smooth transition for icon color */
+  }
+  
+  /* Hover Effects for Action Links */
+  .form-table-container .text-link:hover {
+    color: var(--hr-accent);
+    /* Text turns blue on hover */
+  }
+  
+  .form-table-container .text-link:hover svg {
+    fill: var(--hr-accent);
+    /* Icon turns blue on hover */
+  }
+  
+  /* Links */
+  .form-table-container a {
+    color: var(--hr-accent);
+    text-decoration: none;
+  }
+  
+  .form-table-container a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Table Header Background */
+  .form-table-container .form-table thead {
+    background-color: var(--hr-surface-elevated);
+    /* White background for header */
+  }
+  
+  .form-table-container .table-header {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  /* Rounded Corners for Table Header */
+  .form-table-container .form-table thead th:first-child {
+    border-top-left-radius: 12px;
+  }
+  
+  .form-table-container .form-table thead th:last-child {
+    border-top-right-radius: 12px;
+  }
+  
+  /* Rounding for Each Row */
+  .form-table-container .table-row td:first-child {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+  
+  .form-table-container .table-row td:last-child {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  
+  /* Special Case for Last Row */
+  .form-table-container .table-row:last-child td:first-child {
+    border-bottom-left-radius: 12px;
+  }
+  
+  .form-table-container .table-row:last-child td:last-child {
+    border-bottom-right-radius: 12px;
+  }
+  /*15abff*/

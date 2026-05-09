@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Run Prettier formatting only on staged files (using lint-staged)
+npx lint-staged || exit 1
+
+# Run lint, if it fails, the commit will be aborted
+npm run lint || exit 1
+
+git add .

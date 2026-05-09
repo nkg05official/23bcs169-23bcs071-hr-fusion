@@ -1,0 +1,60 @@
+/* CPDA_ClaimPage.module.css */
+
+.fullWidthGrid {
+    width: 100% !important;  /* Ensure it takes full width */
+    margin: 0;               /* Reset margin */
+    padding: 0;
+    padding-top: 50px;       /* Reset padding */
+    box-sizing: border-box;  /* Ensure padding and border are included in the element's width/height */
+    background-color: white;
+  }
+  
+  .fusionTabsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .limitedWidthTabs {
+    max-width: 300px; /* Adjust the width as needed */
+  }
+  
+  .fusionActiveRecentTab {
+    background-color: rgba(21, 171, 255, 0.1); /* Transparent blue background */
+    color: #15abff; /* Blue color */
+    border-color: #15abff; /* If you want to highlight the border as well */
+  }
+  
+  .fusionCaretCircleIcon {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .flexContainer {
+    justify-content: flex-start; /* Align to the start */
+  }
+  
+  .endButton {
+    margin-left: 100px;
+  }
+  
+  .tab {
+    flex: 1; /* Equal width for all tabs */
+    text-align: center; /* Center text in tab */
+  }
+  
+  /* Add any additional styling you need for your page */
+  
+  .breadcrumb {
+    margin-bottom: 20px; /* Style for the breadcrumb section */
+  }
+  
+  .submit-button {
+    background-color: #15abff; /* Button background color */
+    color: white; /* Button text color */
+  }
+  
+  
+  
+  /* You can add more styles as needed */
+  

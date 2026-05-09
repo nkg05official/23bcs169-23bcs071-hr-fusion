@@ -1,0 +1,277 @@
+.leave_container {
+    margin-top: 50px;
+    width: 95%;
+    padding: 25px;
+    box-sizing: border-box;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+
+.leave_container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.leave_container .leave_grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.leave_container .leave_grid-section.full-width {
+    grid-template-columns: 1fr;
+}
+
+.leave_grid-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.leave_container .leave_grid-row.three-cols {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.leave_container .leave_input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.leave_container .leave_input-wrapper input,
+.leave_container .leave_select {
+    width: 100%;
+    padding: 8px 14px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+    color: black !important;
+}
+
+.leave_container .leave_input-wrapper input {
+    padding-left: 50px;
+    color: #000 !important;
+}
+
+.leave_container .leave_input-wrapper input:focus,
+.leave_container .leave_select:focus {
+    border: 2px solid #15abff;
+    outline: none;
+}
+
+.leave_container .leave_footer-section {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: -5px;
+    margin-right: 0px;
+}
+
+.leave_container .leave_username-input,
+.leave_container .leave_designation-input {
+    width: 100%;
+}
+
+.leave_container .leave_right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.leave_container .leave_center {
+    justify-content: center;
+}
+
+.leave_section-divider {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.leave_divider-line {
+    border: none;
+    height: 2px;
+    background-color: #ddd;
+    margin: 10px 0;
+}
+
+/* change option hover and focus color */
+.leave_container .leave_select option:hover,
+.leave_container .leave_select option:focus {
+    background-color: #f1f1f1;
+}
+
+/* Container */
+.leave_title {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #7878AB;
+    margin-bottom: 20px;
+}
+
+/* Form input */
+.leave_input, .leave_HR_header .leave_select {
+    background-color: #c6c4c420;
+    color: #00000067;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    width: 100%;
+    height: 50px;
+    padding: 12px 12px 12px 40px;
+}
+
+/* Input label */
+.leave_input-label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+    color: #000000;
+}
+
+/* Grid */
+.leave_grid-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.leave_grid-col {
+    flex: 1;
+}
+
+/* Icon wrapper */
+.leave_input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.leave_input-wrapper svg {
+    position: absolute;
+    left: 12px;
+    color: #15ABFF8a;
+}
+
+/* Button */
+.leave_button {
+    background-color: #a1a3a520;
+    width: 100px;
+    border-radius: 12px;
+    padding: 5px 5px;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px #6c6c6c solid;
+    transition: box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.leave_button:hover {
+    background-color: #d4d6db20;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 16.5px;
+    color: #000000;
+}
+
+.leave_button-row {
+    display: flex;
+    justify-content: space-between;
+    /* border-radius: 12px; */
+    border-radius: 32px 0px 0px 0px;
+    padding: 20px 20px;
+    background-color: #9fa7bb20;
+    margin-bottom: 0px;
+    margin-right: -25px;
+}
+
+.leave_buttonapprove {
+    background-color: #a1a3a520;
+    border: 1px #6c6c6c solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leave_buttonapprove svg {
+    margin-left: 8px;
+    color: #15abff8a;
+}
+
+.leave_buttonapprove:hover {
+    background-color: #d4d6db20;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 16.5px;
+}
+
+/* Footer */
+.leave_footer-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #9fa7bb20;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.leave_username-input,
+.leave_designation-input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    width: 100%;
+    height: 50px;
+}
+
+.leave_container input{
+    color:black
+}
+
+/* For responsiveness */
+@media (max-width: 768px) {
+    .leave_container .leave_grid-section,
+    .leave_container .leave_grid-row {
+        grid-template-columns: 1fr;
+    }
+
+    .leave_container {
+        width: 90%;
+    }
+
+    .leave_container .leave_footer-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+.leave_purpose {
+    width: 66.3%;
+}

@@ -1,0 +1,19 @@
+/* Breadcrumbs.module.css */
+.MantineBreadcrumbs{
+   margin-top: 10px;
+    
+    margin-bottom: 40px; 
+
+}
+.breadcrumbItem {
+    color: #333; /* Neutral color */
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 20px;
+  }
+  
+  .breadcrumbItem:hover {
+    color: #15a9fff1; /* Hover color */
+    text-decoration: none;
+  }
+  
